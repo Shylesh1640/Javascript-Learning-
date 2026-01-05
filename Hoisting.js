@@ -1,3 +1,4 @@
+//var hoisting example
 // var gandhiji = "Father of our nation";
 // console.log(gandhiji); // Output: Father of our nation
 // var gandhiji = "Father of our nation";
@@ -10,3 +11,22 @@
 // const gandhiji = "Father of our nation";
 
 //let and const also hoist the variable declarations to the top of their block scope, but they do not initialize them. Accessing them before the declaration results in a ReferenceError due to the temporal dead zone (TDZ).
+
+//function hoisting example
+
+// greet();
+
+// function greet() {
+//   console.log("Hello, world!");
+// }
+
+// computer();
+// const computer = function(){
+//     console.log("lenovo slim 5");
+// }
+
+const producer = () => {
+    console.log("Lyca");
+}
+producer();
+
