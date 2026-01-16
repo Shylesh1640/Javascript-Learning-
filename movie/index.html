@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Info Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎬 Movie Info Finder</h1>
+
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="movie-input" 
+                placeholder="Enter movie name..."
+            >
+            <button id="fetch-button" onclick="fetchmovie()">
+                Search
+            </button>
+        </div>
+
+        <p id="error-message" class="error"></p>
+
+        <div class="result">
+            <img 
+                id="movie-poster" 
+                alt="Movie Poster"
+            >
+            <div id="movie-info"></div>
+        </div>
+    </div>
+
+    <!-- JS FILE -->
+    <script src="script.js"></script>
+</body>
+</html>
